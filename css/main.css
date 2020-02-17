@@ -1,10 +1,18 @@
-body{
-	background: url('/images/background.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+/*General styles */
+
+* {
+	box-sizing: border-box;
 
 }
 
+main {
+	background: url('/images/background.jpg') no-repeat center center;
+	background-size: cover;
+
+
+}
+
+/*Header and navigation styles*/
 
 #logo-img {
 	width: 100px;
@@ -32,4 +40,29 @@ body{
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 
+}
+
+/*Footer styles*/
+
+#contact-info {
+	background: url('/images/Tallinn.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	position: relative;
+
+	
+}
+
+.page-footer {
+	color: rgba(255, 255, 255, .8);
+}
+
+.copyright {
+	color: navy;
+}
+
+.social-icons {
+	display: inline-block;
 }
