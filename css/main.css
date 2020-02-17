@@ -20,6 +20,12 @@ main {
 	margin: 10px 10px 10px 0;
 }
 
+.navbar {
+	background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); /* to make the navbar background gradient; style is available through https://cssgradient.io/gradient-backgrounds/ */
+
+}
+
 .navbar-brand {
    padding-top: 10px;
 }
@@ -41,6 +47,7 @@ main {
 	text-decoration: none;
 
 }
+
 
 /*Footer styles*/
 
@@ -66,3 +73,27 @@ main {
 .social-icons {
 	display: inline-block;
 }
+
+
+/*Media quesries depending on the screen size 
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Large devices (desktops, 992px and up). We want to add / sign after the navigation tags when the screen size is medium */
+@media (min-width: 992px) { 
+	.nav-link::after {
+	content: "/";
+	color: peru;
+	padding-left: 0.75rem;
+  }  /* This code will help us add the / sign after the navigation items */
+.nav-item .contact::after {
+	content: none;
+  } /* after the last item we don't want the sign, therefore, we set the content as none */
+   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  	color: peru;
+  }
+   .navbar-nav .active>.nav-link {
+   	color: peru !important;  /*to make the active item color different from others. With important we override the bootstrap style*/
+   }
+}  
+
