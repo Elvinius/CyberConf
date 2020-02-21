@@ -9,11 +9,10 @@
 		<meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/">
 		<title>CyberConf 2020| Home</title>
 		<link rel="icon" href="images/title-bar.png" sizes="48x48" type="image/png">  <!-- to add the image to the title bar -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> <!-- bootstrap link -->
+		<link rel="stylesheet" type="text/css" href="css/main.css"> <!-- main ccss style link -->
 		<script src="https://kit.fontawesome.com/942ca677f7.js" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 	</head>
 <body>
 	<header>
@@ -53,9 +52,29 @@
 	    </nav>
     </header>
     <main> 
-      <div class="container text-light">
-    	<h2 class="text-center">Welcome to our conference!</h2>
+      <div class="jumbotron text-center text-light">
+    	  <h2 class="mt-5">Welcome to CyberConf 2020!</h2>
+		  <div id="countdown-div" class="container mt-2"> 
+			  <div> 
+			    <span class="days" id="day"></span> 
+			    <div class="smalltext">Days</div>
+			  </div> 
+			  <div> 
+			    <span class="hours" id="hour"></span> 
+			    <div class="smalltext">Hours</div> 
+			  </div> 
+			  <div> 
+			    <span class="minutes" id="minute"></span> 
+			    <div class="smalltext">Minutes</div> 
+			  </div> 
+			  <div> 
+			    <span class="seconds" id="second"></span> 
+			    <div class="smalltext">Seconds</div> 
+			  </div> 
+		  </div> 
+		  <p id="final-text"></p>
       </div>
+      
     </main>
 
      <footer class="page-footer mb-4">
@@ -103,6 +122,6 @@
 	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	 <script src="js/bootstrap.min.js"></script>
-	
+	 <script src="js/index.js"></script>
 </body>
 </html>

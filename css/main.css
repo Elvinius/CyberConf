@@ -3,13 +3,16 @@
 * {
 	box-sizing: border-box;
 
+
 }
 
-main {
-	background: url('/images/background.jpg') no-repeat center center;
-	background-size: cover;
+body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+}
 
-
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
 }
 
 /*Header and navigation styles*/
@@ -22,8 +25,7 @@ main {
 
 .navbar {
 	background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); /* to make the navbar background gradient; style is available through https://cssgradient.io/gradient-backgrounds/ */
-
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* to make the navbar background gradient; style is available through https://cssgradient.io/gradient-backgrounds/ */
 }
 
 .navbar-brand {
@@ -32,7 +34,6 @@ main {
 
 .navbar-brand h1 {
 	color: #4169E1;
-	font-family: 'Lora', serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -40,12 +41,68 @@ main {
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
-
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
+}
 
+.navbar-toggler {
+	background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+	border:none;
+}
+
+.navbar-toggler:focus {
+  
+  outline:none;
+  
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  	color: peru;
+  }
+   .navbar-nav .active>.nav-link {
+   	color: peru !important;  /*to make the active item color different from others. With important we override the bootstrap style*/
+   }
+
+.jumbotron h2 {
+	font-size: 3rem;
+}
+
+.jumbotron {
+	background: url('/images/audience.jpg') no-repeat center center;
+	background-size: cover;
+	border-radius: 0;
+	width: 100%;
+	height: 400px;
+}
+
+/*Countdown style*/
+
+#countdown-div {
+	display: inline-block;
+	font-size: 30px;
+	width: 100%;
+	max-width: 600px;
+}
+
+#countdown-div > div {
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);;
+}
+
+#countdown-div > span {
+	padding: 15px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #00816A !important;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
 }
 
 
@@ -58,8 +115,6 @@ main {
     -o-background-size: cover;
 	background-size: cover;
 	position: relative;
-
-	
 }
 
 .page-footer {
@@ -88,12 +143,6 @@ main {
   }  /* This code will help us add the / sign after the navigation items */
 .nav-item .contact::after {
 	content: none;
-  } /* after the last item we don't want the sign, therefore, we set the content as none */
-   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  	color: peru;
-  }
-   .navbar-nav .active>.nav-link {
-   	color: peru !important;  /*to make the active item color different from others. With important we override the bootstrap style*/
-   }
+  } /* after the last item we don't want the sign, therefore, we set the content as none */ 
 }  
 
