@@ -59,11 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  	color: peru;
+  	color: peru;   
   }
    .navbar-nav .active>.nav-link {
    	color: peru !important;  /*to make the active item color different from others. With important we override the bootstrap style*/
    }
+
+  .nav-item {
+  	font-weight: bold;
+
+  }
 
 .jumbotron h2 {
 	font-size: 3rem;
@@ -109,17 +114,41 @@ h1, h2, h3, h4, h5, h6 {
 /*Footer styles*/
 
 #contact-info {
-	background: url('/images/Tallinn.jpg') no-repeat center center;
+	background: url('/images/conference-2.jpg') no-repeat center;  /*Photo by Markus Spiske temporausch.com*/
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 	background-size: cover;
 	position: relative;
+	
 }
 
 .page-footer {
-	color: rgba(255, 255, 255, .8);
+	color: rgba(255,255,255);
 }
+
+a[href^="mailto"] { 
+	color: peru; 
+}
+
+a[href^="mailto"]:hover {
+  color: #ce0606;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#additional-contact-info {
+	font-style: italic;
+}
+
+
+section > hr{
+	height: 12px;
+	font-weight: 700;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(255, 255, 255, 0.5);
+	
+} /*This will achieve the change in the style of hr tag.*/
 
 .copyright {
 	color: navy;
