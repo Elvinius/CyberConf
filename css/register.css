@@ -10,7 +10,7 @@ body {
  font-family: 'Quicksand', sans-serif;
  font-weight: 300;
  background: url('/images/audience.jpg') no-repeat center center;
- background-size: contain;
+ background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,12 +72,10 @@ h1, h2, h3, h4, h5, h6 {
 
   }
 
-
-
 /*Registration form styles*/ 
 
 form input {
-  padding: .6em 1.4em .5em .8em;
+    padding: .6em 1.4em .5em .8em;
     line-height: 1.3;
     border-radius: .5em;
     border: 1px solid #aaa;
@@ -85,7 +83,12 @@ form input {
     box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
     color: #444;
     font-size: 16px;
+    outline:none;
 
+}
+
+form input:focus{
+  box-shadow: 0 0 3pt 2pt skyblue;
 }
 
 #form-container { 
@@ -96,6 +99,7 @@ form input {
   padding: 20px;
   border-radius: 5px;
   justify-content: center;
+  font-weight: 700;
 
 }
 
@@ -118,7 +122,7 @@ form input {
   display: block;
   margin: 10px 0 10px 0;
   width: 100%;
-    max-width: 100%; 
+  max-width: 100%; 
 }
 
 .select-css {
@@ -161,8 +165,8 @@ form input {
 #contact-info {
   background: url('/images/conference-2.jpg') no-repeat center;  /*Photo by Markus Spiske temporausch.com*/
   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: relative;
   
@@ -205,9 +209,16 @@ section > hr{
   
 }
 
-aside {
-  background-color: white !important;
-  
+div.clearfix{
+  background-color: white;
+}
+
+.clearfix:after { 
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 
