@@ -1,78 +1,79 @@
 /*General styles */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 
 
 }
 
 body {
- font-family: 'Quicksand', sans-serif;
- font-weight: 300;
- background: url('/images/audience.jpg') no-repeat center center;
- background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    background: url('../images/audience.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-weight: 500;
+    font-weight: 500;
 }
 
 /*Header and navigation styles*/
 
 #logo-img {
-  width: 100px;
-  height: 100px;
-  margin: 10px 10px 10px 0;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px 10px 0;
 }
 
 .navbar {
-  background-color: #85FFBD;
+    background-color: #85FFBD;
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* to make the navbar background gradient; style is available through https://cssgradient.io/gradient-backgrounds/ */
 }
 
 .navbar-brand {
-   padding-top: 10px;
+    padding-top: 10px;
 }
 
 .navbar-brand h1 {
-  color: #4169E1;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+    color: #4169E1;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .navbar-toggler {
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-  border:none;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    border: none;
 }
 
 .navbar-toggler:focus {
-  
-  outline:none;
-  
+
+    outline: none;
+
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: peru;   
-  }
-   .navbar-nav .active>.nav-link {
-    color: peru !important;  /*to make the active item color different from others. With important we override the bootstrap style*/
-   }
+    color: peru;
+}
 
-  .nav-item {
+.navbar-nav .active > .nav-link {
+    color: peru !important; /*to make the active item color different from others. With important we override the bootstrap style*/
+}
+
+.nav-item {
     font-weight: bold;
 
-  }
+}
 
-/*Registration form styles*/ 
+/*Registration form styles*/
 
 form input {
     padding: .6em 1.4em .5em .8em;
@@ -80,49 +81,49 @@ form input {
     border-radius: .5em;
     border: 1px solid #aaa;
     font-weight: 700;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
     color: #444;
     font-size: 16px;
-    outline:none;
+    outline: none;
 
 }
 
-form input:focus{
-  box-shadow: 0 0 3pt 2pt skyblue;
+form input:focus {
+    box-shadow: 0 0 3pt 2pt skyblue;
 }
 
-#form-container { 
-  margin: 15% auto;
-  width: 50%;
-  background-color: rgb(245,245,245);
-  display: flex;
-  padding: 20px;
-  border-radius: 5px;
-  justify-content: center;
-  font-weight: 700;
+#form-container {
+    margin: 15% auto;
+    width: 50%;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    font-weight: 700;
 
 }
 
 .btn {
-  border-radius: .5em;
-  background-color: #0074d9;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  letter-spacing: .5px;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: .6em 1.4em .5em .8em;
-  line-height: 1.3;
+    border-radius: .5em;
+    background-color: #0074d9;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: .6em 1.4em .5em .8em;
+    line-height: 1.3;
 
 }
 
 .btn, input, select {
-  display: block;
-  margin: 10px 0 10px 0;
-  width: 100%;
-  max-width: 100%; 
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 .select-css {
@@ -134,91 +135,92 @@ form input:focus{
     line-height: 1.3;
     padding: .6em 1.4em .5em .8em;
     border: 1px solid #aaa;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
     border-radius: .5em;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
 }
+
 .select-css::-ms-expand {
     display: none;
 }
+
 .select-css:hover {
     border-color: #888;
 }
+
 .select-css:focus {
     border-color: #aaa;
     box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
     box-shadow: 0 0 0 3px -moz-mac-focusring;
-    color: #222; 
+    color: #222;
     outline: none;
 }
 
 /*Footer styles*/
 
 #contact-info {
-  background: url('/images/conference-2.jpg') no-repeat center;  /*Photo by Markus Spiske temporausch.com*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  
+    background-color: #000;
+    position: relative;
+
 }
 
 .page-footer {
-  color: rgba(255,255,255);
+    color: rgba(255, 255, 255);
 }
 
-a[href^="mailto"] { 
-  color: peru; 
+a[href^="mailto"] {
+    color: peru;
 }
 
 a[href^="mailto"]:hover {
-  color: #ce0606;
-  cursor: pointer;
-  text-decoration: none;
+    color: #ce0606;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #additional-contact-info {
-  font-style: italic;
+    font-style: italic;
 }
 
 
-section > hr{
-  height: 12px;
-  font-weight: 700;
+section > hr {
+    height: 12px;
+    font-weight: 700;
     border: 0;
     box-shadow: inset 0 12px 12px -12px rgba(255, 255, 255, 0.5);
-  
-} /*This will achieve the change in the style of hr tag.*/
+
+}
+
+/*This will achieve the change in the style of hr tag.*/
 
 .copyright {
-  color: navy;
- 
+    color: navy;
+
 }
 
 .social-icons {
-  display: inline-block;
-  
+    display: inline-block;
+
 }
 
-div.clearfix{
-  background-color: white;
+div.clearfix {
+    background-color: white;
 }
 
-.clearfix:after { 
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 
@@ -227,15 +229,19 @@ div.clearfix{
 // No media query for `xs` since this is the default in Bootstrap
 
 // Large devices (desktops, 992px and up). We want to add / sign after the navigation tags when the screen size is medium */
-@media (min-width: 992px) { 
-  .nav-link::after {
-  content: "/";
-  color: peru;
-  padding-left: 0.75rem;
-  }  /* This code will help us add the / sign after the navigation items */
-.nav-item .contact::after {
-  content: none;
-  } /* after the last item we don't want the sign, therefore, we set the content as none */ 
+@media (min-width: 992px) {
+    .nav-link::after {
+        content: "/";
+        color: peru;
+        padding-left: 0.75rem;
+    }
+
+    /* This code will help us add the / sign after the navigation items */
+    .nav-item .contact::after {
+        content: none;
+    }
+
+    /* after the last item we don't want the sign, therefore, we set the content as none */
 }  
 
 
