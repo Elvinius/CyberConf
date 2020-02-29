@@ -11,7 +11,8 @@
     <link rel="icon" href="images/logo-secondv.png" sizes="48x48" type="image/png">
     <!-- to add the image to the title bar -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> <!-- bootstrap link -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- main ccss style link -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- main css style link -->
+    <link rel="stylesheet" type="text/css" href="css/schedules.css">
     <script src="https://kit.fontawesome.com/942ca677f7.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 </head>
@@ -54,37 +55,51 @@
     </nav>
 </header>
 <main>
-	<div class="container-fluid">
-		<h2>Schedules</h2>
-    <table class="table table-hover">
-        <tbody>
-        <tr>
-            <th scope="row">08:00</th>
-            <td colspan="3">Doors open / Registration for the conference</td>
-        </tr>
-        <tr>
-            <th scope="row">09:00</th>
-            <td colspan="3">Welcome speech</td>
-        </tr>
-        <tr>
-			<th scope="row">09:30</th>
-			<td colspan="3">How to hack without being caught <div style="font-size: 10px;">Elliot Alderson</div></td>
+    <div class="container mt-3">
+        <h2 class="text-center">Schedules</h2>
+        <table class="table table-hover jumbotron mb-3">
+            <tbody>
+            <tr>
+                <th scope="row">08:00</th>
+                <td colspan="3">Doors open / Registration for the conference</td>
+            </tr>
+            <tr>
+                <th scope="row">09:00</th>
+                <td colspan="3">Welcome speech</td>
+            </tr>
+            <tr>
+                <th scope="row">09:30</th>
+                <td colspan="3">How to hack without being caught
+                    <div style="font-size: 12px;">Elliot Alderson</div>
+                </td>
 
-		</tr>
-		<tr>
-			<th scope="row">10:30</th>
-			<td colspan="3">Social engineering as one of the biggest cyber security threats <div style="font-size: 10px;">Kate Libby</div></td>
-		</tr>
-		<tr>
-			<th scope="row">11:30</th>
-			<td colspan="3">Coffee break</td>
-		</tr>
-        </tbody>
-    </table>
-	</div>
+            </tr>
+            <tr>
+                <th scope="row">10:30</th>
+                <td colspan="3">Social engineering as one of the biggest cyber security threats
+                    <div style="font-size: 12px;">Kate Libby</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">11:30</th>
+                <td colspan="3">Coffee break</td>
+            </tr>
+            <tr>
+                <th scope="row">12:00</th>
+                <td colspan="3">Cyber Warfare and the future of the Cyber Security
+                    <div style="font-size: 12px;">David Lightman</div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">13:00</th>
+                <td colspan="3">Closing remarks</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </main>
 
-<footer class="page-footer mb-4">
+<footer class="page-footer">
     <div id="contact-info">
         <div class="container ">
             <div class="row pt-3">
@@ -112,20 +127,22 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 text-sm-center mb-sm-3 mt-3 float-left copyright" style="background-size: cover;">&copy;
-        Copyright CyberConf 2020
-    </div>
-    <div class="col-md-6 text-right text-sm-center float-right mt-md-3 mb-sm-3" style="background-size: cover;">
-        <div class="social-icons text-dark ">
-            <a href="">
-                <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            <a href="">
-                <i class="fab fa-instagram-square fa-lg"></i>
-            </a>
+    <div class="clearfix">
+        <div class="col-md-6 text-sm-center mb-sm-3 mt-3 float-left copyright" style="background-size: cover;">&copy;
+            Copyright CyberConf 2020
+        </div>
+        <div class="col-md-6 text-right text-sm-center float-right mt-md-3 mb-sm-3" style="background-size: cover;">
+            <div class="social-icons text-dark ">
+                <a href="">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-instagram-square fa-lg"></i>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
@@ -136,6 +153,5 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
 </body>
 </html>
