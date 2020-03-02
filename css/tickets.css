@@ -8,3 +8,7 @@ body {
     color: black;
 }
 
+.card-header:hover{
+    background-color:#007bff;
+    color: white;
+}
