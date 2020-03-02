@@ -1,0 +1,10 @@
+body {
+    color: white;
+    background: url('../images/audience.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.card-deck {
+    color: black;
+}
+
