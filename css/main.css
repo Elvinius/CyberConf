@@ -113,6 +113,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.blue-gradient {
+    background: linear-gradient(40deg,#45cafc,#303f9f) !important;
+    color: #fff;
+    border: none;
+}
+
 /*Countdown style*/
 
 #countdown-div {
