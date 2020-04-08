@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+require_once "register.php";
+?>
+?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -55,7 +59,7 @@
 </header>
 <main class="main-area">
     <div id="form-container">
-        <form method="GET" action="form_handling.html">
+        <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"">
             <h5 class="mb-3">Use the following form to register</h5>
             <input type="text" name="username" placeholder="Full name" required>
             <input type="password" name="password" placeholder="Password" required>
