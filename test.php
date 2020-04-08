@@ -1,13 +1,13 @@
 <?php
 
 
-$dsn = "mysql:host=localhost;dbname=cyberconf";
+$dsn = "mysql:host=127.0.0.1;dbname=cyberconf";
 $user = "app_user";
 $passwd = "eCHBgnV5GVIKAZ1h";
 
 $pdo = new PDO($dsn, $user, $passwd);
 
-$stm = $pdo->query("SELECT * FROM county");
+$stm = $pdo->query("SELECT * FROM occupation");
 
 $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
