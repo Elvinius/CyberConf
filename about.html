@@ -17,43 +17,101 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="index.html">
-            <img id="logo-img" src="images/logo-secondv.png" width="30" height="30" alt="CyberConf Logo">
-        </a>
-
-        <a class="navbar-brand" href="index.html">
-            <h1>CyberConf 2020</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ml-4" id="navbarNav">
-            <ul class="navbar-nav nav ml-xl-5">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="schedules.html">Schedules</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tickets.html">Tickets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="register.html">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link contact" href="#contact-info">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="index.html">
+                <img id="logo-img" src="images/logo-secondv.png" width="30" height="30" alt="CyberConf Logo">
+            </a>
+    
+            <a class="navbar-brand" href="index.html">
+                <h1>CyberConf 2020</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-4" id="navbarNav">
+                <ul class="navbar-nav nav ml-xl-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <!-- aims to hide an element to all devices except screen readers with .sr-only.  -->
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedules.html">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Content-->
+                    <div class="modal-content form-elegant">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body mx-4">
+                            <!--Body-->
+                            <div class="md-form mb-5">
+                                <input type="email" id="Form-email1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-email1">Your username</label>
+                            </div>
+    
+                            <div class="md-form pb-3">
+                                <input type="password" id="Form-pass1" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+                                <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+                                    Password?</a></p>
+                            </div>
+    
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                            </div>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+                                with:</p>
+    
+                            <div class="row my-3 d-flex justify-content-center">
+                                <!--Facebook-->
+                                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+                                <!--Twitter-->
+                                <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+                                <!--Google +-->
+                                <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer mx-5 pt-3 mb-1">
+                            <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="register.html" class="blue-text ml-1">
+                                Register</a></p>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="text-center">
+                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">Sign in</a>
+            </div>
+        </nav>
+    
+    </header>
 <main>
     <div class="speakers container-fluid mt-3">
         <h1 class="text-center pb-2">Our Speakers</h1>
@@ -62,25 +120,26 @@
                 <img class="card-img-top" src="images/mr-robot.jpeg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Elliot Alderson</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">He is very smart.<br>
+                        Fu*k society and loves codeing at home.</p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="images/kate.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Kate Libby</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                        content.</p>
+                    <p class="card-text">Kate is a netowork cyber specialist.<br>
+                        An official microsoft advocater but, she is also a protester against GNU/Linux.<br>
+                        
+                        
+                        </p>
                 </div>
             </div>
             <div class="card">
                 <img class="card-img-top" src="images/david_lightman.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">David Lightman</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to show that equal height
-                        action.</p>
+                    <p class="card-text">Elliot's best friend.</p>
                 </div>
             </div>
         </div>

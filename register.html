@@ -53,12 +53,13 @@ require_once "register.php";
                         <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contact" href="#contact-info">Contact</a>
+                        <a class="nav-link contact" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <h1 class="text-center text-white mt-5"> Sign up</h1>
     <main class="main-area">
         <div id="form-container">
             <form method="POST" action="./register.php">
@@ -67,13 +68,15 @@ require_once "register.php";
                 <input type="password" name="password" placeholder="Password" required>
                 Birthdate<input type="date" name="birthdate" value="2000-01-01" min="1970-01-01" max="2018-12-31">
                 <label for="gender">Select your gender</label>
-                <select class="select-css" name="age">
+                <select class="select-css" name="gender">
+                    <option disabled selected value> -- Gender -- </option>
                     <option name="gender" value="Male">Male ♂</option>
                     <option name="gender" value="Female">Female ♀</option>
-                    <option name="gender" value="Non-binary">Non-binary 亜</option>
+                    <option name="gender" value="Non-binary">Non-binary</option>
                 </select>
                 <label for="country">Select your country</label>
                 <select id="country" name="country">
+                    <option disabled selected value> -- Country -- </option>
                     <option value="Afganistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
@@ -323,11 +326,13 @@ require_once "register.php";
                 </select>
                 <label for="gender">Select your education</label>
                 <select class="select-css" name="education">
+                    <option disabled selected value> -- Education Level -- </option>
                     <option name="education" value="Master's Degree">Master's Degree</option>
                     <option name="education" value="Bachelor's Degree">Bachelor's Degree</option>
                 </select>
                 <label for="occupation">Select your occupation</label>
                 <select class="select-css" name="occupation">
+                    <option disabled selected value> -- Occupation -- </option>
                     <option name="occupation" value="Cyber Security Specialist">Cyber Security Specialist</option>
                     <option name="occupation" value="Software Engineer">Software Engineer</option>
 
