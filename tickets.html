@@ -119,24 +119,81 @@
                 <div class="card-header"><h4>Early Bird</h4></div>
                 <div class="card-body">
                     <h2 class="card-title">&euro; 50</h2>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy Tickets</button>
+                    <p class="card-text">This ticket type is intended for the early attendees.</p>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#paymentModal">Buy Tickets</button>
                 </div>
             </div>
             <div class="card shadow-sm">
                 <div class="card-header"><h4>Regular Bird</h4></div>
                 <div class="card-body">
                     <h2 class="card-title">&euro; 100</h2>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy Tickets</button>
+                    <p class="card-text">This ticket type is intended for the regular attendees.</p>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#paymentModal">Buy Tickets</button>
                 </div>
             </div>
             <div class="card shadow-sm">
                 <div class="card-header"><h4>Late Bird</h4></div>
                 <div class="card-body">
                     <h2 class="card-title">&euro; 150</h2>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy Tickets</button>
+                    <p class="card-text">This ticket type is intended for the late attendees.</p>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#paymentModal">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap payment modal form -->
+        <div class="modal fade text-dark" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="paymentModalLabel">Payment details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="cc-payment" class="control-label mb-1">Payment amount</label>
+                                <input id="cc-payment" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                <span class="invalid-feedback">Enter the payment amount</span>
+                            </div>
+                            <div class="form-group has-success">
+                                <label for="cc-name" class="control-label mb-1">Name on card</label>
+                                <input id="cc-name" name="cc-name" type="text" class="form-control cc-name" required autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
+                                <span class="invalid-feedback">Enter the name as shown on credit card</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="cc-number" class="control-label mb-1">Card number</label>
+                                <input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified visa" required="" pattern="[0-9]{16}">
+                                <span class="invalid-feedback">Enter a valid 16 digit card number</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="cc-exp" class="control-label mb-1">Expiration</label>
+                                        <input id="cc-exp" name="cc-exp" type="tel" class="form-control cc-exp" required placeholder="MM / YY" autocomplete="cc-exp">
+                                        <span class="invalid-feedback">Enter the expiration date</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="x_card_code" class="control-label mb-1">Security code</label>
+                                    <div class="input-group">
+                                        <input id="x_card_code" name="x_card_code" type="tel" class="form-control cc-cvc" required autocomplete="off">
+                                        <span class="invalid-feedback order-last">Enter the 3-digit code on back</span>
+                                        <div class="input-group-append">
+                                            <div class="input-group-text">
+                                        <span class="fa fa-question-circle fa-lg" data-toggle="popover" data-container="body" data-html="true" data-title="Security Code"
+                                              data-content="<div class='text-center one-card'>The 3 digit code on back of the card..<div class='visa-mc-cvc-preview'></div></div>"
+                                              data-trigger="hover"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-lg btn-info btn-block"> <i class="fa fa-lock fa-lg"></i>&nbsp; <span class="h3">Pay</span></button>
+                    </div>
                 </div>
             </div>
         </div>
