@@ -2,19 +2,18 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 
+//to enforce the Bootstrap validation use the following code
 $("#payment-button").click(function(e) {
 
-    // Fetch form to apply Bootstrap validation
-    var form = $(this).parents('form');
-
-    if (form[0].checkValidity() === false) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-    else {
-        // Perform ajax submit here
-        form.submit();
-    }
-
-    form.addClass('was-validated');
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
 });
