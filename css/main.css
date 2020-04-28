@@ -2,8 +2,6 @@
 
 * {
     box-sizing: border-box;
-
-
 }
 
 body {
@@ -210,7 +208,6 @@ div.clearfix {
     clear: both;
 }
 
-
 /*Media queries depending on the screen size
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
@@ -230,4 +227,3 @@ div.clearfix {
 
     /* after the last item we don't want the sign, therefore, we set the content as none */
 }  
-
