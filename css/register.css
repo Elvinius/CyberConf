@@ -164,6 +164,11 @@ form input:focus {
     outline: none;
 }
 
+label{
+    margin-bottom: 0;
+    margin-top: 0.6em;
+}
+
 /*Footer styles*/
 
 #contact-info {
